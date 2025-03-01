@@ -4,6 +4,14 @@
 
 This project aims to enhance the OLabs platform by introducing features such as student-teacher monitoring, assessment tracking, hierarchical user roles, and secure communication. The goal is to provide a personalized learning experience while ensuring data protection and security.
 
+## Team Information
+
+- **Team Name:** Ph4ntom Div3r5
+- **Team Members:**
+  - Evan Binu Chirayath
+  - Akhil Kannan
+  - Jacob Isaac
+
 ## Technologies Used
 
 - **Frontend:** React
