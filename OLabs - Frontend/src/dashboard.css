@@ -1,0 +1,337 @@
+/* General Styles */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: #000000; 
+}
+
+
+/* Top Navbar */
+.zero-navbar{
+    background-color: #00FFFF; /* Neon Blue background */
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 153, 255, 0.5); /* Neon blue glow */
+}
+.top-navbar {
+    background-color: #00FFFF; /* Neon Blue background */
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 153, 255, 0.5); /* Neon blue glow */
+}
+
+.logo img {
+    height: 80px;
+}
+.nav-links {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Vertically align the content if needed */
+    width: 100%; /* Ensure it takes up the available space */
+}
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    margin: 0; /* Remove the left margin */
+    padding: 0; /* Remove any default padding */
+    justify-content: center; /* Center the list items */
+}
+
+.nav-links li {
+    color: #120101;
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #001F3F; /* Dark Blue text */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff4500; /* Neon Blue on hover */
+    text-shadow: 0 0 10px #00FFFF; /* Neon glow effect */
+}
+.languages {
+    position: relative;
+    display: inline-block;
+}
+
+.language-btn {
+    background-color: transparent;
+    color: #666;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.language-btn i {
+    margin-right: 5px;
+}
+
+.language-dropdown {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+    display: none;
+}
+
+.language-dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.language-dropdown a:hover {
+    background-color: #ddd;
+    text-shadow: 0 0 10px #00FFFF;
+}
+
+.language-dropdown.show {
+    display: block;
+}
+/* Banner Section */
+.banner {
+    margin-left: auto; 
+    padding-right: 20px;
+}
+
+.banner img {
+    height: 80px;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+}
+
+/* Subject Cards Section */
+.subjects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subject-card {
+    background-color: #120101; /* White background for cards */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 153, 255, 0.3); /* Neon blue glow */
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 180px;
+    transition: transform 0.3s ease;
+    border: 1px solid #00FFFF; /* Neon Blue border */
+    color: #001F3F; /* Dark Blue text */
+}
+
+.subject-card img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.subject-card h3 {
+    font-size: 1em;
+    color: #001F3F; /* Dark Blue text */
+    background-color: #00FFFF; /* Neon blue background */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.subject-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 153, 255, 0.7); /* Stronger neon glow */
+}
+
+/* Specific Card Colors */
+.subject-card.physics {
+    border-top: 5px solid #001F3F; /* Dark Blue */
+}
+
+.subject-card.chemistry {
+    border-top: 5px solid #001F3F; /* Dark Blue */
+}
+
+.subject-card.biology {
+    border-top: 5px solid #001F3F; /* Dark Blue */
+}
+
+.subject-card.maths {
+    border-top: 5px solid #001F3F; /* Dark Blue */
+}
+
+.subject-card.language {
+    border-top: 5px solid #001F3F; /* Dark Blue */
+}
+
+.subject-card.science {
+    border-top: 5px solid #001F3F; /* Dark Blue */
+}
+
+.subject-card.social-science {
+    border-top: 5px solid #001F3F; /* Dark Blue */
+}
+
+.subject-card.computer {
+    border-top: 5px solid #001F3F; /* Dark Blue */
+}
+
+.subject-card.ar-vr {
+    border-top: 5px solid #001F3F; /* Dark Blue */
+}
+
+.subject-card.edp {
+    border-top: 5px solid #001F3F; /* Dark Blue */
+}
+
+.subject-card.isl {
+    border-top: 5px solid #001F3F; /* Dark Blue */
+}
+
+/* Olabs Info Section */
+.olabs-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #001F3F; /* Dark Blue background */
+    box-shadow: 0 2px 5px rgba(0, 153, 255, 0.5); /* Neon blue glow */
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.olabs-info > div {
+    margin: 10px;
+    padding: 15px;
+    width: 300px; /* Adjust as needed */
+    text-align: left;
+    border: 1px solid #00FFFF; /* Neon Blue border */
+    border-radius: 8px;
+    color: #fff; /* White text */
+}
+
+.olabs-info img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+.olabs-info h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #001F3F; /* Dark Blue text */
+    background-color: #00FFFF; /* Neon blue background */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.olabs-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.olabs-info li {
+    margin-bottom: 5px;
+}
+
+.olabs-info .stats {
+    display: flex;
+    justify-content: space-around;
+}
+
+.olabs-info .stats > div {
+    text-align: center;
+}
+.olabs-info .training > div{
+    margin-left: 5 px;
+}
+.olabs-info .mobile-app >div {
+    margin-left: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #00FFFF; /* Neon Blue background */
+    margin-top: 20px;
+    border-top: 1px solid #001F3F; /* Dark Blue border */
+    color: #001F3F; /* Dark Blue text */
+}
+html {
+    scroll-behavior: smooth;
+  }
+  .scroll-container {
+    height: 150px; /* Adjust height as needed */
+    overflow: hidden;
+    position: relative;
+}
+
+.scrolling-text {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    animation: scroll-up 15s linear infinite;
+}
+
+.scrolling-text li {
+    padding: 5px 0;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+
+/* Infinite scrolling animation */
+@keyframes scroll-up {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+.lab-videos {
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+}
+
+.lab-videos a {
+    display: flex;
+    justify-content: center;
+}
+
+.lab-videos img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}

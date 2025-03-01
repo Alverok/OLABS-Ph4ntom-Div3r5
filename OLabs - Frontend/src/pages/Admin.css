@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #87CEEB; /* Light background for contrast */
+    color: #333; /* Dark text for readability */
+}
+
+/* Admin Dashboard Styles */
+.admin-dashboard {
+    padding: 20px;
+}
+
+h2 {
+    color: #001F3F; /* Dark Blue text */
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.5em; /* Larger font size for emphasis */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+}
+
+/* Card Styles */
+.card {
+    background-color: #ffffff; /* White background for cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin: 10px;
+    padding: 20px;
+    width: 30%; /* Set width to 30% of the container */
+    height: 400px; /* Set a fixed height for the cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    position: relative; /* For pseudo-element positioning */
+    overflow: hidden; /* To contain pseudo-elements */
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.card h3 {
+    color: #001F3F; /* Dark Blue text */
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.5em; /* Slightly larger font size */
+    border-bottom: 2px solid #00FFFF; /* Neon blue underline */
+    padding-bottom: 10px; /* Space below the heading */
+}
+
+.user-list {
+    list-style-type: none;
+    padding: 0;
+    max-height: 300px; /* Limit the height of the user list */
+    overflow-y: auto; /* Enable scrolling if content exceeds max height */
+}
+
+.user-item {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0; /* Light gray border */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    color: #555; /* Darker text for user items */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.user-item ul {
+    list-style-type: none; /* Remove default list styling */
+    padding-left: 20px; /* Indent nested list */
+    margin: 5px 0; /* Add margin for spacing */
+}
+
+.user-item li {
+    margin: 2px 0; /* Add some margin between lines */
+}
+
+.user-item:last-child {
+    border-bottom: none; /* Remove border for last item */
+}
+
+.user-item:hover {
+    background-color: #e6f7ff; /* Light blue background on hover */
+    color: #001F3F; /* Change text color on hover */
+}
+
+.card .btn {
+    margin: 5px; /* Add some margin around buttons */
+    padding: 10px 15px; /* Increase padding for better touch targets */
+    font-size: 14px; /* Adjust font size */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* Remove default border */
+    color:#001F3F; /* White text color */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.card .btn-success {
+    background: linear-gradient(45deg, #28a745, #218838); /* Green gradient */
+}
+
+.card .btn-info {
+    background: linear-gradient(45deg, #17a2b8, #138496); /* Blue gradient */
+}
+
+.card .btn-danger {
+    background: linear-gradient(45deg, #dc3545, #c82333); /* Red gradient */
+}
+
+.card .btn:hover {
+    opacity: 0.9; /* Slightly fade buttons on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.card .btn:active {
+    transform: translateY(0); /* Reset lift effect on click */
+}
+.cardedit {
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    padding: 20px; /* Padding inside the card */
+    width: 100%; /* Full width of the modal */
+    max-width: 400px; /* Maximum width for the card */
+    margin: 0 auto; /* Center the card horizontally */
+}
+
+.cardedit .card-body {
+    padding: 10px; /* Padding for the card body */
+}
+
+.cardedit h5 {
+    color: #001F3F; /* Dark blue text for the title */
+    margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Center the title */
+}
+
+.cardedit .form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+.cardedit input {
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 10px; /* Padding for inputs */
+    width: 100%; /* Full width */
+    transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+.cardedit input:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+.cardedit .text-center {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    margin-top: 20px; /* Space above the button */
+}
+.cardedit .btn {
+    width: 100%; /* Full width for the button */
+    border-radius: 5px; /* Rounded corners for buttons */
+    padding: 10px; /* Padding for buttons */
+    margin-top: 10px; /* Space above the button */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.cardedit .btn-primary {
+    background-color: #007bff; /* Primary blue color */
+    border: none; /* Remove default border */
+}
+
+.cardedit .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Additional styles for the modal */
+.modal-body {
+    display: flex;
+    justify-content: center; /* Center the card in the modal */
+    align-items: center; /* Center vertically */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cardedit input,
+    .cardedit .btn {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* Stack cards on smaller screens */
+        align-items: center; /* Center cards */
+    }
+
+    .card {
+        width: 90%; /* Full width on mobile */
+        height: auto; /* Allow height to adjust on mobile */
+    }
+}
